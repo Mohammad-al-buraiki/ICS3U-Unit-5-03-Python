@@ -2,56 +2,61 @@
 
 # Created by: Mohammad-al-buraiki
 # Created on January 2021
-# This program is a tringle area program
+# This program is a level mark program
 
 
 def level_grade(mark):
-    # this function is calculation the tringle area
+    # this function converts the level mark to a percentage    
     
+    percentage = 0
     # process
-    
-if mark == 4+:
-        return mark
-    elif mark == 4:
-        return mark
-    elif mark == 4-:
-        return mark
-    elif mark == 3+ :
-        return mark
-    elif mark == 3 :
-        return mark
-    elif mark == 3- :
-        return mark
-    elif mark == 2+ :
-        return mark
-    elif mark == 2 :
-        return mark
-    elif mark == 2- :
-        return mark
-    elif mark == 1+ :
-        return mark
-    elif mark == 1 :
-        return mark
-    elif mark == R:
-        return mark
+
+    if mark == "4+":
+        percentage = 97
+    elif mark == "4":
+        percentage = 90
+    elif mark == "4-":
+        percentage = 83
+    elif mark == "3+":
+        percentage = 78
+    elif mark == "3":
+        percentage = 75
+    elif mark == "3-":
+        percentage = 71
+    elif mark == "2+":
+        percentage = 68
+    elif mark == "2":
+        percentage = 65
+    elif mark == "2-":
+        percentage = 61
+    elif mark == "1+":
+        percentage = 58
+    elif mark == "1":
+        percentage = 53
+    elif mark == "R":
+        percentage = 51
     else:
-        return mark
+        percentage = -1
+
+    return percentage
 
 
 def main():
     # input
     while True:
-        user_input_str = input("Enter the level you want converted to a percentage: ")
+        user_input_str = input("Enter the level of mark: ")
 
         try:
-            input_from_user = int(user_input_str)
-
             # calling functions
-            level_grade(user_input_str)
+            grade_percentage = level_grade(user_input_str)
             # output
-            # prints
-            
-        except:
+            if grade_percentage == -1:
+                print("Sorry, that was an invalid level.")
+            else:
+                print("The percentage is {0}%".format(grade_percentage))
+                break
+
+        except Exception:
             print("Something wrong")
             print("Please re-enter the values.")
 
