@@ -49,32 +49,8 @@ def main():
             # calling functions
             level_grade(user_input_str)
             # output
-            print("Level {0} has a middle percentage of {0}.".format(level_grade)
-            break
-            print("Level 4 has a middle percentage of 90%")
-            break
-            print("Level 4- has a middle percentage of 83%")
-            break
-            print("Level 3+ has a middle percentage of 78%")
-            break
-            print("Level 3 has a middle percentage of 74%")
-            break
-            print("Level 3- has a middle percentage of 71%")
-            break
-            print("Level 2+ has a middle percentage of 68%")
-            break
-            print("Level 2 has a middle percentage of 64%")
-            break
-            print("Level 2- has a middle percentage of 61%")
-            break
-            print("Level 1+ has a middle percentage of 58%")
-            break
-            print("Level 1 has a middle percentage of 54%")
-            break
-            print("Level 1- has a middle percentage of 51%")
-            break
-            print("Level R has a middle percentage of 25%")
-            break
+            # prints
+            
         except:
             print("Something wrong")
             print("Please re-enter the values.")
